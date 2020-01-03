@@ -1,1 +1,393 @@
-resume.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*{
+				font-family: Arial;
+				font-size: 14px;
+				color: #333;
+			}
+
+			body{
+				padding: 50px;
+			}
+			body:before{
+				position: absolute;
+				display: inline-block;
+				left: 50%;
+				-webkit-transform: rotate(45deg);
+				margin-left: -375px;
+				font-size: 750px;
+				color: #FEEBD3;
+				z-index: -1;
+				/*content: "[ ]";*/
+			}
+
+			a{
+				color: #F89A25;
+				/*font-weight: normal;*/
+			}
+
+			header{
+				font-size: 30px;
+			}
+
+			address, time{
+				float: right;
+				color: #999;
+			}
+
+			p{
+				max-width: 600px;
+				margin: 0 0 10px 0;
+			}
+
+			ul{
+				padding-left: 20px;
+				margin: 0;
+			}
+
+			section{
+				margin: 20px 0 10px 0;
+				break-inside: avoid;
+			}
+
+			h2{
+				margin: 20px 0 5px 0;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			h2:before{
+				margin: 0;
+				color: #333;
+				content: "[";
+			}
+			h2:after{
+				margin: 0;
+				color: #333;
+				content: "]";
+			}
+
+			.name{
+				font-size: 30px;
+			}
+
+			.job-title {
+				font-size: 16px;
+			}
+
+			.job {
+				border-left: 2px solid #ccc;
+				border-right: 0;
+			}
+
+			.top-to-bottom {
+			    -webkit-border-image: -webkit-gradient(linear, 0, 100%, from(#FEEBD3), to(rgba(254, 235, 211, 0))) 1 100%;
+			    -webkit-border-image:
+			      -webkit-linear-gradient(#FEEBD3, rgba(254, 235, 211, 0)) 1 100%;
+			    -moz-border-image:
+			      -moz-linear-gradient(#FEEBD3, rgba(254, 235, 211, 0)) 1 100%;
+			    -o-border-image:
+			      -o-linear-gradient(#FEEBD3, rgba(254, 235, 211, 0)) 1 100%;
+			    border-image:
+			      linear-gradient(to bottom, #FEEBD3, rgba(254, 235, 211, 0)) 1 100%;
+			}
+
+
+			@media (min-width:800px) {
+				.ind-10{
+					margin-left: 10px;
+				}
+
+				.ind-20{
+					margin-left: 20px;
+				}
+
+				.ind-40{
+					margin-left: 40px;
+				}
+			}
+			@media (max-width:799px) {
+				.ind-10{
+					margin-left: 5px;
+				}
+
+				.ind-20{
+					margin-left: 10px;
+				}
+
+				.ind-40{
+					margin-left: 20px;
+				}
+			}
+
+			@media (min-width:800px) {
+				article{
+					margin-left: 10%;
+					width: 80%;
+				}
+			}
+			@media (max-width:799px) {
+				article{
+					margin-left: auto;
+					width: 100%;
+				}
+			}
+
+			@media print {
+				*{
+					font-size: 10px;
+				}
+
+				header{
+					font-size: 18px;
+				}
+
+				h2{
+					font-size: 10px;
+				}
+
+				.name{
+					font-size: 18px;
+				}
+
+				.job-title {
+					font-size: 10px;
+				}
+			}
+
+			@page {
+				margin: 1cm;
+			}
+		</style>
+	</head>
+	<body>
+		<header>[<a class="name">KIRK</a>ROERIG]</header>
+		<address>
+			3002 Gilpin St<br/>
+			Denver, CO 80205<br/>
+			(616) 340-7000</br>
+			kirk@kirkroerig.com
+		</address>
+		<br/>
+		<article>
+			<h2><a>OBJECTIVE</a></h2>
+			<p>
+				To seek a challenging, meaningful software engineering position
+				that utilizes a diverse technical skill set, and will
+				grant me the opportunity to grow as a problem solver
+				while helping my colleagues do the same.
+			</p>
+
+			<h2><a>EDUCATION<a></h2>
+			<span>
+				<b>Michigan Technological University</b><br/>
+				<b>Houghton, Michigan</b><br/>
+				Graduated May 2013<br/>
+				B.S. Computer Science
+			</span>
+
+			<h2><a>PASSION</a>PROJECTS</h2>
+			<a href="http://www.kirkroerig.com/projects">http://www.kirkroerig.com/projects</a>
+
+			<h2><a>PROFESSIONAL</a>EXPERIENCE</h2>
+
+			<section class="job top-to-bottom">
+				<time>Nov 2018 - Dec 2019</time>
+				<b class="ind-20 job-title">Lead Robotics Engineer</b><br/>
+				<b class="ind-20">ROV3R LLC</b></br>
+				<p class="ind-20">
+				Led software design and engineering effort for outdoor autonomous
+				platform in the lawn-care space.
+				</p>
+				<ul class="ind-40">
+					<li>Implemented <b>IMU</b> and <b>LiDAR</b> interface software</li>
+					<li>Defined dynamics model and implemented a representative <b>Kalman filter</b></li>
+					<li>Implemented and tuned <b>PID controls systems</b></li>
+					<li>Implemented <b>point cloud</b> analysis routines</li>
+					<li>Performed preparatory <b>VSLAM</b> implementation research.</li>
+					<li>Wrote <b>OpenGL</b> <b>telemetry</b> visualization software</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>Nov 2018 - Mar 2019</time>
+				<b class="ind-20 job-title">Graphics Pipeline Engineer</b><br/>
+				<b class="ind-20">Mersive LLC</b></br>
+				<p class="ind-20">
+				Worked on the rendering pipeline for Mersive's product 'Solstice' and across team boundaries on R&D projects.
+				</p>
+				<ul class="ind-40">
+					<li>Adapted existing <b>C++ 11</b>, <b>DirectX 10</b> and <b>OpenGL</b> based rendering engine to function across multiple displays</li>
+					<li>Optimized rendering and animation software</li>
+					<li>Collaborated with R&D to prototype an on-line, <b>machine-learning</b> system to ascertain coarse user location using ambient radio signals</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>September 2017 - April 2018</time>
+				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
+				<b class="ind-20">Code Blue Corporation</b></br>
+				<p class="ind-20">
+				Played an instrumental role in the development of Code Blue's VoIP push-for-help phone system.
+				</p>
+				<ul class="ind-40">
+					<li>Aided in development of EcOS, Linux distro for proprietary i.MX6 based hardware</li>
+					<li>Gained familiarity with <b>buildroot</b></li>
+					<li>Embedded Linux Systems programming in <b>C</b> and <b>C++</b></li>
+					<li><b>Linux kernel module</b> development</li>
+					<li>Issue tracking using <b>GitLab</b>, version control with <b>Git</b></li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>June 2016 - March 2017</time>
+				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
+				<b class="ind-20">Open Systems Technologies - Firefly</b></br>
+				<p class="ind-20">
+				Aided in continued development of a multi-media control panel for recreational vehicles.
+				</p>
+				<ul class="ind-40">
+					<li>Integrated bus access (<b>CAN</b>, <b>RS-232</b>) into web-based platform</li>
+					<li><b>Cross-compiled C++ node.js</b> modules for ARM Cortex-A9</li>
+					<li>Gained familiarity working with <b>uBoot</b> and <b>Varasite i.MX6 SoM</b></li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>Feb - Oct 2016</time>
+				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
+				<b class="ind-20">Modustri LLC</b></br>
+				<p class="ind-20">
+				Contracted to assist with app polish and special R&D projects.
+				</p>
+				<ul class="ind-40">
+					<li>Used <b>CoreAnimation</b> and <b>Swift</b> to construct animations for existing iOS app</li>
+					<li>Developed firmware to evaluate the Nordic NRF51 for use as a <b>BLE</b> beacon</li>
+					<li>Co-led design and development of Linux system programs for an ARM based SBC used in a <b>Bluetooth</b> based asset tracking system</li>
+					<li>Implemented <b>MQTT</b> for data collection.</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>March - June 2016</time>
+				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
+				<b class="ind-20">Adonit</b></br>
+				<p class="ind-20">
+				Contracted to update SDK rendering approach and demos.
+				</p>
+				<ul class="ind-40">
+					<li>Brought on to update the <b>OpenGL</b> rendering engine for the JotTouch SDK</li>
+					<li>Added capability to accommodate iOS's touch prediction</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>Jan 2016 - Sep 2017</time>
+				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
+				<b class="ind-20">Wimage LLC</b></br>
+				<p class="ind-20">
+				Contracted to maintain and add functionality to existing educational app for children.
+				</p>
+				<ul class="ind-40">
+					<li>Built a custom iOS keyboard</li>
+					<li>Influenced UI design</li>
+					<li>Continued support of Wimage app</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>Oct - Nov 2015</time>
+				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
+				<b class="ind-20">Open Systems Technologies - LiftMaster</b></br>
+				<p class="ind-20">
+				Contracted to assist in the development of a diagnostic tool for service technicians of LiftMaster gate operators.
+				</p>
+				<ul class="ind-40">
+					<li>Native app written in <b>Objective-C</b></li>
+					<li>Developed <b>graphs</b> and <b>visualizations</b> for diagnostic data</li>
+					<li>Helped to design <b>Bluetooth</b> communication pattern around lower-level message structure</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>May - Oct 2015</time>
+				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
+				<b class="ind-20">Co Interactive</b><br/>
+				<p class="ind-20">
+				Contracted to maintain existing software and aid in prototyping efforts of new products.
+				</p>
+				<ul class="ind-40">
+					<li>Helped to maintain the existing app <a href="http://www.adonit.net/forge/">Forge</a></li>
+					<li>Spear headed the design and development of a new <b>multi-platform</b> drawing engine</li>
+					<li>Began working with <b>Metal</b> graphics API</li>
+				</ul>
+		</section>
+
+			<section class="job top-to-bottom">
+				<time>March - September 2015</time>
+				<b class="ind-20 job-title">Game Designer and Programmer</b><br/>
+				<b class="ind-20">Projective</b>
+				<p class="ind-20">Conceived, prototyped and designed <a href="http://www.projectivegame.com">Projective</a>, an <b>augmented reality</b> game for iOS</p>
+				<ul class="ind-40">
+					<li>Designed and wrote object oriented game engine</li>
+					<li>Wrote <b>GLSL</b> code and designed effects</li>
+					<li>Utilized device <b>IMU</b> and <b>quaternions</b> to produce high quality view transformations</li>
+					<li>Successfully released on the Apple App Store</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>August 2014 - March 2015</time>
+				<b class="ind-20 job-title">Computer Graphics Engineer</b><br/>
+				<b class="ind-20">Adonit</b><br/>
+				<p class="ind-20">
+				Played a crucial role in the release of <a href="http://www.adonit.net/forge/">Forge</a>, a drawing app that earned editors choice on the app store.
+				</p>
+				<ul class="ind-40">
+					<li>Learned <b>Objective-C</b> and the <b>Cocoa Framework</b></li>
+					<li>Applied <b>linear algebra</b> and <b>matrix transformations</b></li>
+					<li>Wrote high performance application and <b>shader</b> code</li>
+				</ul>
+			</section>
+
+			<section class="job top-to-bottom">
+				<time>May 2013 - August 2014</time>
+				<b class="ind-20 job-title">Application Development Consultant</b><br/>
+				<b class="ind-20">Open Systems Technologies (OST)</b><br/>
+				<p class="ind-20">
+				Worked with enterprise customers directly to ascertain their needs
+				and implemented changes in new and existing software.
+				</p>
+				<ul class="ind-40">
+					<li>Planned and lead the development of a high visibility website</li>
+					<li>Wrote a <b>TCP</b> server to consume data from a client's time and attendance terminals</li>
+					<li>Created <b>data visualization</b> components using <b>SVG</b></li>
+					<li>Experience working through an <b>agile workflow</b></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2><a>SKILLS</a></h2>
+				<ul>
+					<li><b>Soldering</b></li>
+					<li><b>CAD</b> and <b>rapid prototyping</b></li>
+					<li>Experience operating <b>bench-top equipment</b></li>
+					<li>Reading <b>schematics</b> and <b>data-sheets</b></li>
+					<li>Solid <b>3D mathematics</b> skills</li>
+				</ul>
+
+				<h2><a>CERTIFICATIONS</a></h2>
+				<ul>
+					<li>Machine Learning by Stanford University on Coursera. Certificate earned on Saturday, July 8, 2017</li>
+					<li>Convolutional Neural Networks on Coursera. Certificate earned on Wednesday, May 30, 2018</li>
+					<li>Sequence Models on Coursera. Certificate earned on Sunday, July 1, 2018</li>
+					<li>Structuring Machine Learning Projects on Coursera. Certificate earned on Saturday, April 7, 2018</li>
+					<li>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization  on Coursera. Certificate earned on Sunday, March 18, 2018</li>
+				</ul>
+
+			</section>
+		</article>
+	</body>
+</html>
