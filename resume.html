@@ -33,19 +33,6 @@
 				font-size: 30px;
 			}
 
-			@media (min-width:800px) {
-				article{
-					margin-left: 10%;
-					width: 80%;
-				}
-			}
-			@media (max-width:799px) {
-				article{
-					margin-left: auto;
-					width: 100%;
-				}
-			}
-
 			address, time{
 				float: right;
 				color: #999;
@@ -63,6 +50,7 @@
 
 			section{
 				margin: 20px 0 10px 0;
+				break-inside: avoid;
 			}
 
 			h2{
@@ -134,6 +122,19 @@
 				}
 			}
 
+			@media (min-width:800px) {
+				article{
+					margin-left: 10%;
+					width: 80%;
+				}
+			}
+			@media (max-width:799px) {
+				article{
+					margin-left: auto;
+					width: 100%;
+				}
+			}
+
 			@media print {
 				*{
 					font-size: 10px;
@@ -154,6 +155,10 @@
 				.job-title {
 					font-size: 10px;
 				}
+			}
+
+			@page {
+				margin: 1cm;
 			}
 		</style>
 	</head>
@@ -201,7 +206,7 @@
 					<li>Defined dynamics model and implemented a representative <b>Kalman filter</b></li>
 					<li>Implemented and tuned <b>PID controls systems</b></li>
 					<li>Implemented <b>point cloud</b> analysis routines</li>
-					<li>Designed and implemented path matching algorithms</li>
+					<li>Performed preparatory <b>VSLAM</b> implementation research.</li>
 					<li>Wrote <b>OpenGL</b> <b>telemetry</b> visualization software</li>
 				</ul>
 			</section>
@@ -270,7 +275,7 @@
 				<b class="ind-20 job-title">Contract Software Engineer</b><br/>
 				<b class="ind-20">Adonit</b></br>
 				<p class="ind-20">
-				Contracted to assist with app polish and special R&D projects.
+				Contracted to update SDK rendering approach and demos.
 				</p>
 				<ul class="ind-40">
 					<li>Brought on to update the <b>OpenGL</b> rendering engine for the JotTouch SDK</li>
